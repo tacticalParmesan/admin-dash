@@ -1,3 +1,9 @@
+/* ==================== Root and base ==================== */
+:root {
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 * {
     padding: 0px;
     margin: 0px;
@@ -7,3 +13,42 @@
     list-style: none;
 }
 
+/* ==================== Layout ==================== */
+
+body {
+    min-height: 100vh;
+
+    display: grid;
+    grid-template: 9rem 1fr 1fr 1fr 1fr / 1fr 5fr 2fr;
+    grid-template-areas: 
+        "sidebar header header"
+        "sidebar content-w announcements"
+        "sidebar content-w announcements"
+        "sidebar content-w trending"
+        "sidebar content-w trending";
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: palegoldenrod;
+}
+
+.header {
+    grid-area: header;
+    background-color: palevioletred;
+}
+
+.content-wrapper {
+    grid-area: content-w;
+    background-color: palegreen;
+}
+
+.announcements-wrapper {
+    grid-area: announcements;
+    background-color: lightblue;
+}
+
+.trending-wrapper {
+    grid-area: trending;
+    background-color: lightseagreen;
+}
