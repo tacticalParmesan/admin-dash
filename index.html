@@ -4,133 +4,203 @@
 		<meta charset="UTF-8" />
 		<meta name="viewpdiv="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+		/>
+		<script src="index.js" defer></script>
 		<title>Admin Dashboard</title>
 	</head>
 	<body>
 		<div class="sidebar">
-			<div class="logo">💻Dashboard</div>
+			<div class="logo">
+				<div class="material-symbols-outlined">dashboard</div>
+				Dashboard
+			</div>
 			<ul class="sidebar-options">
-				<li>Option1</li>
-				<li>Option2</li>
-				<li>Option3</li>
-				<li>Option4</li>
-				<li>Option5</li>
-				<li>Option6</li>
+				<li>
+					<div class="material-symbols-outlined">home</div>
+					Home
+				</li>
+				<li>
+					<div class="material-symbols-outlined">person</div>
+					Profile
+				</li>
+				<li>
+					<div class="material-symbols-outlined">message</div>
+					Messages
+				</li>
+				<li>
+					<div class="material-symbols-outlined">history</div>
+					History
+				</li>
+				<li>
+					<div class="material-symbols-outlined">task</div>
+					Tasks
+				</li>
+				<li>
+					<div class="material-symbols-outlined">group</div>
+					Communities
+				</li>
 				<li style="opacity: 0">Empty</li>
-				<li>Option8</li>
-				<li>Option9</li>
-				<li>Option10</li>
+				<li>
+					<div class="material-symbols-outlined">settings</div>
+					Settings
+				</li>
+				<li>
+					<div class="material-symbols-outlined">support</div>
+					Support
+				</li>
+				<li>
+					<div class="material-symbols-outlined">shield</div>
+					Privacy
+				</li>
 			</ul>
 		</div>
 		<div class="header">
-			<div class="header-first-row">
-				<div class="searchbar">
-					<div class="lens-icon">🔍</div>
-					<input type="search" name="search" id="search" />
-				</div>
-				<div class="logged-user-info">
-					<div class="notifications">🔔</div>
-					<div class="profile-pic small">EF</div>
-					<div class="user-name small">Edoardo Ferreri</div>
-				</div>
+			<div class="searchbar">
+				<div class="material-symbols-outlined">search</div>
+				<input type="search" name="search" id="search" />
 			</div>
-			<div class="header-second-row">
-				<div class="profile-pic big">EF</div>
+			<div class="logged-user-info">
+				<div class="material-symbols-outlined">notifications</div>
+				<div class="profile-pic small" id="logged-user-pic"></div>
+				<div class="user-name small">Edoardo Ferreri</div>
+			</div>
+			<div class="user-dash">
+				<div class="profile-pic big" id="logged-user-pic"></div>
 				<div class="user-name big">
 					Edoardo Ferreri <span class="handle">(@tacticalParmesan)</span>
 				</div>
-				<ul class="action-buttons">
-					<li>Action1</li>
-					<li>Action2</li>
-					<li>Action3</li>
-				</ul>
 			</div>
+			<ul class="action-buttons">
+				<button>New</button>
+				<button>Upload</button>
+				<button>Share</button>
+			</ul>
 		</div>
 		<div class="content-wrapper">
-			<p>Your stuff</p>
+			<p>Active Projects</p>
 			<div class="content">
 				<div class="item">
-					<div class="item-title">ITEM1</div>
+					<div class="item-title">Yet Another Crypto App</div>
 					<div class="item-content">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-						magnam hic, sint quod quibusdam, quo corporis ad amet, quasi
-						cupiditate laborum a ea. Blanditiis ea doloribus maxime veritatis
-						deserunt autem.
+						Let's pretend everything crypto was not just a bubble and many
+						people lost money while some lucky chap got rich! Let's also pretent
+						that after years we can really get rich with cryptos and that
+						crypto-bros were right! Somehow this app will let you achieve that!
 					</div>
 					<ul class="item-icons">
-						<li class="icon"></li>
-						<li class="icon"></li>
-						<li class="icon"></li>
+						<li class="icon">
+							<div class="material-symbols-outlined">star</div>
+						</li>
+						<li class="icon">
+							<div class="material-symbols-outlined">track_changes</div>
+						</li>
+						<li class="icon">
+							<div class="material-symbols-outlined">share</div>
+						</li>
 					</ul>
 				</div>
 				<div class="item">
-					<div class="item-title">ITEM2</div>
+					<div class="item-title">Self Learning RUST Platform</div>
 					<div class="item-content">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
-						nihil explicabo animi facere deleniti earum officiis commodi
-						doloremque consequuntur et quo soluta non exercitationem, laudantium
-						quam neque totam dolores minus!
+						Do you wanna flex your Arch-linux loving tendencies with those poor
+						noobs that used ubuntu? This platform lets you do something more!
+						Learn the Rust programming language interactively sop that you can
+						diss those little sad python developer with rome REALLY memory-safe
+						software! Fun not included.
 					</div>
 					<ul class="item-icons">
-						<li class="icon">⭐</li>
-						<li class="icon">👁️</li>
-						<li class="icon">🖱️</li>
+						<li class="icon">
+							<div class="material-symbols-outlined">star</div>
+						</li>
+						<li class="icon">
+							<div class="material-symbols-outlined">track_changes</div>
+						</li>
+						<li class="icon">
+							<div class="material-symbols-outlined">share</div>
+						</li>
 					</ul>
 				</div>
 				<div class="item">
-					<div class="item-title">ITEM3</div>
+					<div class="item-title">Files Hosting Platform</div>
 					<div class="item-content">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-						praesentium officia provident exercitationem! Provident atque
-						voluptate quia molestiae praesentium esse quo eos. Laborum
-						doloremque fugiat magnam deleniti cupiditate. Accusamus, veniam.
+						We both know that you feel somewhat unsafe storing all your anime on
+						Google Drive. Since we don't want to be judged by Alphabet, this
+						files hosting platform will guarantee total anonimity and privacy.
+						Don't worry bro, she is actually 127 years old but dragon ladies do
+						not age like humans!
 					</div>
+
 					<ul class="item-icons">
-						<li class="icon">⭐</li>
-						<li class="icon">👁️</li>
-						<li class="icon">🖱️</li>
+						<li class="icon">
+							<div class="material-symbols-outlined">star</div>
+						</li>
+						<li class="icon">
+							<div class="material-symbols-outlined">track_changes</div>
+						</li>
+						<li class="icon">
+							<div class="material-symbols-outlined">share</div>
+						</li>
 					</ul>
 				</div>
 				<div class="item">
-					<div class="item-title">ITEM4</div>
+					<div class="item-title">Sabaton Lyrics API</div>
 					<div class="item-content">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-						consequuntur et iusto voluptate, nam praesentium reiciendis nihil
-						quae perferendis debitis, quos vero amet libero unde? Facilis et
-						quam nulla quos?
+						I don't know how or why could someone need the fine collection of
+						Sabaton lyrics for a project but I also could not think why not. So
+						get psyched for the moment the "WINGED HUSSARS ARRIVED!".
 					</div>
 					<ul class="item-icons">
-						<li class="icon">⭐</li>
-						<li class="icon">👁️</li>
-						<li class="icon">🖱️</li>
+						<li class="icon">
+							<div class="material-symbols-outlined">star</div>
+						</li>
+						<li class="icon">
+							<div class="material-symbols-outlined">track_changes</div>
+						</li>
+						<li class="icon">
+							<div class="material-symbols-outlined">share</div>
+						</li>
 					</ul>
 				</div>
 				<div class="item">
-					<div class="item-title">ITEM5</div>
+					<div class="item-title">An Actual Project</div>
 					<div class="item-content">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
-						maiores voluptas repudiandae, vitae dolores atque magnam dolore
-						necessitatibus inventore illo ipsum impedit non sed sint ut? Ea,
-						tempore natus? Voluptatibus.
+						Learn your girlfriend's mother tongue with the help of AI to generate
+						lessons from prompts and a translator API. Because what else a
+						normal boyfriend would do, buy a book?
 					</div>
 					<ul class="item-icons">
-						<li class="icon">⭐</li>
-						<li class="icon">👁️</li>
-						<li class="icon">🖱️</li>
+						<li class="icon">
+							<div class="material-symbols-outlined">star</div>
+						</li>
+						<li class="icon">
+							<div class="material-symbols-outlined">track_changes</div>
+						</li>
+						<li class="icon">
+							<div class="material-symbols-outlined">share</div>
+						</li>
 					</ul>
 				</div>
 				<div class="item">
-					<div class="item-title">ITEM6</div>
+					<div class="item-title">Lorem Ipsum generator</div>
 					<div class="item-content">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse saepe
-						quam mollitia eligendi ullam ab, pariatur sit quas incidunt fuga
-						similique ipsa maiores. Culpa delectus, sapiente officiis mollitia
-						sequi laboriosam.
+						I'm really getting short fo ideas. So this is it Lorem, ipsum dolor
+						sit amet consectetur adipisicing elit. Ea architecto quibusdam cum
+						hic unde similique maiores quis rerum ullam nesciunt commodi
+						voluptate itaque ex etc. etc.
 					</div>
 					<ul class="item-icons">
-						<li class="icon">⭐</li>
-						<li class="icon">👁️</li>
-						<li class="icon">🖱️</li>
+						<li class="icon">
+							<div class="material-symbols-outlined">star</div>
+						</li>
+						<li class="icon">
+							<div class="material-symbols-outlined">track_changes</div>
+						</li>
+						<li class="icon">
+							<div class="material-symbols-outlined">share</div>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -140,18 +210,30 @@
 			<div class="announcements-panel">
 				<div class="news">
 					<div class="news-title">Site Mantainance</div>
-					<div class="news-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos autem distinctio pariatur. Quasi, a nesciunt harum repellat quam eos, mollitia aliquam voluptates nulla praesentium, magni delectus omnis quos autem doloribus?</div>
-					<hr>
+					<div class="news-text">
+						Even this is an absolutely fake site for educational puroposes of
+						course it gets mantained from time to time, let me just change a
+						character here and a CSS variable there
+					</div>
+					<hr />
 				</div>
 				<div class="news">
 					<div class="news-title">Updated Privacy Policy</div>
-					<div class="news-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis odit illo nam, numquam libero itaque ex doloremque aliquid non vel a nobis consectetur, rem officia sint! Voluptas maxime temporibus voluptate.</div>
-					<hr>
+					<div class="news-text">
+						Seems like the EU striked again! Now those old folks are saygin we
+						cannot sells all of your data to train a Mass Surveillance AI, how
+						are honest businessmen going to break even?
+					</div>
+					<hr />
 				</div>
 				<div class="news">
 					<div class="news-title">Made-my-Day Hackaton</div>
-					<div class="news-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis nostrum et fugit nemo quisquam expedita optio sed accusamus placeat unde quam magnam, iure tempora culpa cum similique perferendis exercitationem voluptatum?</div>
-					<hr>
+					<div class="news-text">
+						This hackaton really made my day. No, I did not win it because I
+						chose to pratake in with the lorem ipsum generator insted of the yet
+						another crypto app, but a fun experience nonetheless!
+					</div>
+					<hr />
 				</div>
 			</div>
 		</div>
@@ -159,28 +241,28 @@
 			<p>Trending</p>
 			<div class="trending-panel">
 				<div class="user">
-					<div class="profile-pic small">LK</div>
+					<div class="profile-pic small"></div>
 					<div class="user-info-tab">
-						<div class="handle">@blondeCherry</div>
+						<div class="handle">@cherryEatingFox</div>
 						<div class="info-text">Tay Tay APIs</div>
 					</div>
 				</div>
 				<div class="user">
-					<div class="profile-pic small">EF</div>
+					<div class="profile-pic small"></div>
 					<div class="user-info-tab">
 						<div class="handle">@tacticalParmesan</div>
 						<div class="info-text">Don't be ted10us</div>
 					</div>
 				</div>
 				<div class="user">
-					<div class="profile-pic small">FI</div>
+					<div class="profile-pic small"></div>
 					<div class="user-info-tab">
 						<div class="handle">@baroqueZeppelin</div>
 						<div class="info-text">Barock and roll</div>
 					</div>
 				</div>
 				<div class="user">
-					<div class="profile-pic small">VA</div>
+					<div class="profile-pic small"></div>
 					<div class="user-info-tab">
 						<div class="handle">@aClimbingBass</div>
 						<div class="info-text">Self-actualizAPP</div>
